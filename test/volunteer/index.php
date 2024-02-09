@@ -1,0 +1,1 @@
+<?php header("Location: /test/volunteer/volunteer.php");?>

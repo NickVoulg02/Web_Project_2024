@@ -1,0 +1,1 @@
+<?php header("Location: /test/base/base1.php");?>
