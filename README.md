@@ -64,3 +64,18 @@ Its main features:
 
 4. Update configuration files (if any) with your database credentials
 5. Open the application via your browser
+
+## 🎯 Goals & Use Cases
+- Speed up matching between people in need and people who want to help in disaster zones
+- Visualize on a map the geographic distribution of needs/offers for better planning
+- Allow volunteers / rescuers to manage logistics (picking up or delivering items)
+- Provide a centralized platform to track resources and allocate help efficiently
+
+## 🛠️ Tech Stack
+- Frontend: HTML, CSS, JavaScript
+- Backend: PHP
+- Database: MySQL (or similar SQL RDBMS)
+
+## 🧪 Testing & Errors
+- There is an errors/ folder for handling known error conditions
+- Use test/ folder for running test scenarios or demo content
