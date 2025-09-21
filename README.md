@@ -55,12 +55,12 @@ Its main features:
    cd Web_Project_2024
 
 2. Import the database:
--Use DATABASE.sql to create the necessary tables/data
+- Use DATABASE.sql to create the necessary tables/data
 
 3. Configure your web server:
--Set up the document root to point to this project folder
--Enable .htaccess or otherwise handle routing, if used
--Set appropriate permissions for folders if needed
+- Set up the document root to point to this project folder
+- Enable .htaccess or otherwise handle routing, if used
+- Set appropriate permissions for folders if needed
 
 4. Update configuration files (if any) with your database credentials
 5. Open the application via your browser
