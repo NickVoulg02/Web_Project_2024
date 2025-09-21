@@ -1,16 +1,68 @@
-Στόχος της παρούσας εργασίας είναι η ανάπτυξη ενός συνεργατικού συστήματος για καταχώρηση
-αιτημάτων παροχής βοήθειας (ειδών ανάγκης) και την εξυπηρέτηση των αναγκών σε μια κοινότητα που
-έχει πληγεί από κάποια φυσική καταστροφή (π.χ. πλημμύρα, σεισμό, κ.α.). Μέσω της πλατφόρμας, ένας
-πολίτης μπορεί να δηλώσει ότι έχει συγκεκριμένες ανάγκες για διάφορα είδη (π.χ. νερό, τροφή, φάρμακα)
-ή να δηλώσει ότι έχει πλεόνασμα και μπορεί να δωρίσει συγκεκριμένα είδη.
-Θεωρούμε ότι οι πολίτες δεν μπορούν να μετακινηθούν και να εξυπηρετήσουν ο ένας τον άλλο, αλλά στην
-περιοχή της καταστροφής κινούνται οχήματα της πολιτικής προστασίας ή εθελοντών (διασώστες), τα οποία
-μπορούν να αναλάβουν την παραλαβή ή παράδοση των ειδών (tasks). Επίσης στην περιοχή υπάρχει η
-«βάση» των διασωστών, η οποία λειτουργεί ως κεντρική αποθήκη.
-Οι διασώστες έχουν τη δυνατότητα να βλέπουν όλα τα αιτήματα ή τις προσφορές των πολιτών σε μια
-χαρτογραφική απεικόνιση και το κάθε όχημα μπορεί να αναλάβει μία ή περισσότερες αποστολές
-παραλαβής/παράδοσης. Οι πολίτες αντίστοιχα έχουν πρόσβαση από το κινητό τους τηλέφωνο και
-δηλώνουν τις ανάγκες τους για διάφορα είδη. Η βάση μπορεί σε χρονικές στιγμές της επιλογής της να
-ανακοινώνει διάφορες ανάγκες για είδη τα οποία είναι σε έλλειψη, και οι ανακοινώσεις αυτές εμφανίζονται
-στα κινητά των πολιτών. Ο κάθε πολίτης στη συνέχεια μπορεί να δηλώσει αν έχει τα είδη που ζητά η βάση,
-ώστε αυτά να μπορούν να παραληφθούν από διασώστες.
+# Web Project 2024
+
+## 📌 Overview
+
+This project is a **collaborative system** designed to help coordinate **aid requests** and **offerings** following a natural disaster (e.g., flood, earthquake). 
+
+Its main features:
+- Citizens can **submit requests** for needed items (water, food, medicine, etc.)  
+- Citizens can **offer surplus items** for donation  
+- Vehicles belonging to Civil Protection / volunteer rescuers are used to **pick up / deliver** items  
+- A central base (warehouse) holds donated items and can issue alerts when supplies are low  
+- A map-based interface shows all requests and offers, allowing rescuers to take up tasks  
+- Citizens can access the system via mobile, declare their needs or what they can donate
+
+---
+
+## 🛠️ Features
+
+- Registration / login for citizens and rescuers  
+- Interface for submitting help requests or offers  
+- Task assignment: rescuer vehicles are assigned to pickup / delivery tasks  
+- Dashboard / map view showing current requests/offers and vehicle availability  
+- Notifications for base supply shortages
+
+---
+
+## 📁 Contents of the Repository
+
+| Folder/File | Purpose |
+|-------------|---------|
+| `index.php` | Main entry / homepage or controller for web routing |
+| `DATABASE.sql` | Database schema and seed data |
+| `1084625,1084626,1084628.docx` / `.pdf` | Possibly project documentation or design documents |
+| `.htaccess` | Configuration for URL rewriting / server settings |
+| `errors/` | Error handling / error pages |
+| `test/` | Testing scripts or demo data |
+| `README.md` | This file |
+
+---
+
+## 🧭 Getting Started
+
+### Prerequisites
+
+- Web server with PHP support (e.g., Apache, Nginx + PHP)  
+- MySQL or compatible DBMS  
+- Access to configure `.htaccess` if URL rewriting is used  
+
+### Installation Steps
+
+1. Clone the project:
+
+   ```bash
+   git clone https://github.com/NickVoulg02/Web_Project_2024.git
+   cd Web_Project_2024
+
+2. Import the database:
+
+  Use DATABASE.sql to create the necessary tables/data
+
+3. Configure your web server:
+
+  Set up the document root to point to this project folder
+  Enable .htaccess or otherwise handle routing, if used
+  Set appropriate permissions for folders if needed
+
+4. Update configuration files (if any) with your database credentials
+5. Open the application via your browser
